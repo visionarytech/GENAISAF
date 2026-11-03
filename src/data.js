@@ -1,0 +1,8 @@
+export const camps = ['Camp Meranti', 'Camp Bayu', 'Camp Tembusu'];
+export const meals = {
+ Breakfast: { name: 'Kaya toast & soft-boiled eggs', description: 'A familiar morning favourite. Golden toast with kaya, two soft-boiled eggs and a warm cup of kopi.', time: '06:30 – 08:00', tags: ['Contains eggs', 'Contains wheat'], nutrition: [420, 16, 48, 18], art: 'toast' },
+ Lunch: { name: 'Hainanese chicken rice', description: 'Comfort on a plate. Tender steamed chicken, fragrant rice, seasonal greens and a light chicken broth.', time: '11:30 – 13:30', tags: ['Contains soy', 'Contains sesame'], nutrition: [620, 36, 78, 18], art: 'chicken' },
+ Dinner: { name: 'Sliced fish bee hoon soup', description: 'A lighter end to the day. Sliced fish, silky rice noodles and leafy greens in a comforting clear broth.', time: '17:30 – 19:30', tags: ['Contains fish', 'Contains soy'], nutrition: [480, 32, 62, 12], art: 'soup' }
+};
+export const options = [ { name: 'Chicken biryani', art: 'biryani', votes: 128, detail: 'Fragrant basmati rice · spiced chicken' }, { name: 'Laksa', art: 'laksa', votes: 96, detail: 'Coconut broth · rice noodles' }, { name: 'Vegetarian bee hoon', art: 'noodles', votes: 64, detail: 'Wok-tossed noodles · garden vegetables' } ];
+export const sampleFeedback = [ { name: 'Synthetic diner 01', meal: 'Lunch', rating: 5, comment: 'Chicken was tender and the chilli had a nice kick!', tags: ['Taste'] }, { name: 'Synthetic diner 02', meal: 'Breakfast', rating: 4, comment: 'A comforting start to the morning. More toast would be great.', tags: ['Portion'] }, { name: 'Synthetic diner 03', meal: 'Dinner', rating: 4, comment: 'Loved the light broth and fresh greens.', tags: ['Taste', 'Variety'] } ];
