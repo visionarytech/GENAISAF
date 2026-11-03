@@ -2,6 +2,21 @@
 
 A mobile-first, fictional cookhouse prototype built with React 19, Vite 7 and Tailwind CSS 4. Olive, white, charcoal and orange styling follows the supplied wireframes, with a desktop sidebar and mobile bottom navigation. All food and camp illustrations are local SVGs; no image services or runtime APIs are used.
 
+## View on GitHub Pages
+
+The deployment workflow in `.github/workflows/deploy-pages.yml` builds and publishes the app when `main` is updated. Relative Vite asset paths support the repository's `/GENAISAF/` URL.
+
+One-time repository setup:
+
+1. Open GitHub repository **Settings → Pages**.
+2. Under **Build and deployment**, select **GitHub Actions** as the source.
+3. Open **Actions → Deploy Cookhouse Connect to GitHub Pages**. Run the workflow on `main`, or rerun the latest run if it started before Pages was enabled.
+4. When deployment succeeds, open the URL shown in the deployment summary or Pages settings. The expected default URL is `https://visionarytech.github.io/GENAISAF/`.
+
+GitHub Pages availability depends on repository visibility, account plan and organization policy. If GitHub reports Pages is unavailable, an owner must resolve that repository setting. No application secrets are needed: the workflow uses GitHub's built-in token with Pages deployment permissions.
+
+The site remains a client-only demo. Local votes and feedback are not shared between visitors or synced with the development preview.
+
 ## Run locally
 
 Requires Node.js 20.19+ or 22.12+ and npm (validated with Node 24).
